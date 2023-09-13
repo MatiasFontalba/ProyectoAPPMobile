@@ -10,10 +10,16 @@
 <ion-menu contentId="main-content">
   <ion-header>
     <ion-toolbar>
-      <ion-title>Menu Content</ion-title>
+      <ion-title>Bienvenid@ Francisca</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding">This is the menu content.</ion-content>
+
+  <ion-content><ion-button href="/TELLEVOAPP/src/app/users/login/login.page.html" expand="full" fill="clear">
+    <ion-icon slot="end" name="log-out-outline"></ion-icon>
+    Cerrar Sesion
+  </ion-button></ion-content>
+  
+  <ion-button expand="full" fill="clear">hola</ion-button>
 </ion-menu>
 <div class="ion-page" id="main-content">
   <ion-header>
@@ -24,5 +30,7 @@
       <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
+  <!--Aqui comienza el cuerpo-->
   <ion-content class="ion-padding"> Tap the button in the toolbar to open the menu. </ion-content>
+  <ion-content class="ion-menu-button"><ion-button expand="full">Buscar Conductor</ion-button></ion-content>
 </div>
