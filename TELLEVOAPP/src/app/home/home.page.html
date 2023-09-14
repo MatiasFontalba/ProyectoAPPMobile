@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar class="colorBlack">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -10,35 +10,36 @@
 <ion-menu contentId="main-content">
   <ion-header>
     <ion-toolbar>
-      <ion-title>Bienvenid@ Francisca</ion-title>
+      <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <ion-content><ion-button href="/TELLEVOAPP/src/app/users/login/login.page.html" expand="full" fill="clear">
+  <ion-content>
+    <ion-button expand="full" fill="clear">
     <ion-icon slot="end" name="person-outline"></ion-icon>
     Mi perfil
   </ion-button>
-  <ion-button href="/TELLEVOAPP/src/app/users/login/login.page.html" expand="full" fill="clear">
+  <ion-button expand="full" fill="clear">
     <ion-icon slot="end" name="chatbox-ellipses-outline"></ion-icon>
     Mensajes
   </ion-button>
-  <ion-button href="/TELLEVOAPP/src/app/users/login/login.page.html" expand="full" fill="clear">
+  <ion-button expand="full" fill="clear">
     <ion-icon slot="end" name="car-sport-outline"></ion-icon>
     Viajes
   </ion-button>
-  <ion-button href="/TELLEVOAPP/src/app/users/login/login.page.html" expand="full" fill="clear">
+  <ion-button expand="full" fill="clear">
     <ion-icon slot="end" name="wallet-outline"></ion-icon>
     Pagos
   </ion-button>
-  <ion-button href="/TELLEVOAPP/src/app/users/login/login.page.html" expand="full" fill="clear">
-    <ion-icon slot="end" name="settings-outline"></ion-icon>
-    Configuraciones
-  </ion-button>
-  <ion-button href="/TELLEVOAPP/src/app/users/login/login.page.html" expand="full" fill="clear">
+  <ion-button expand="full" fill="clear">
     <ion-icon slot="end" name="help-buoy-outline"></ion-icon>
     Ayuda
   </ion-button>
-  <ion-button href="/TELLEVOAPP/src/app/users/login/login.page.html" expand="full" fill="clear">
+  <ion-button expand="full" fill="clear" backgroundcolor="">
+    <ion-icon slot="end" name="settings-outline"></ion-icon>
+    Configuraciones
+  </ion-button>
+  <ion-button expand="full" fill="clear" [routerLink]="'/login'">
     <ion-icon slot="end" name="log-out-outline"></ion-icon>
     Cerrar Sesion
   </ion-button>
@@ -56,7 +57,26 @@
     </ion-toolbar>
   </ion-header>
   <!--Aqui comienza el cuerpo-->
-  <ion-content class="ion-padding"> Tap the button in the toolbar to open the menu. </ion-content>
-  <ion-content class="ion-menu-button"><ion-button expand="full">Buscar Conductor</ion-button></ion-content>
+  <ion-content class="ion-padding"> Bienvenid@ Francisca
+    <ion-button expand="full">Buscar Conductor</ion-button>
+    
+    <ion-card>
+      <img style="width: 100%;" alt="Sobre nosotros" src="https://www.cea-online.es/images/blog/20/errores-conductores-pasajeros-mediana.jpg" />
+      <ion-card-header>
+        <ion-card-title>Sobre nosotros</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis neque at fugit amet eveniet dicta corrupti provident ducimus aspernatur deserunt atque, numquam quas ipsam temporibus eos velit, nesciunt incidunt quia!
+        Aperiam expedita quos voluptatibus eveniet similique dicta aspernatur quasi odio itaque incidunt, eius debitis consequuntur sit harum inventore sunt. Accusamus aliquam vitae ea. Nesciunt itaque impedit perferendis nihil nisi. Ea.
+        Sunt repellendus, temporibus earum exercitationem ut mollitia enim saepe assumenda ipsam at ex quaerat, aspernatur eveniet adipisci? Tempore debitis fugit repellendus reiciendis corporis deserunt quae dignissimos, labore libero, molestias recusandae!
+        Natus itaque dolore doloremque molestias perferendis nemo autem? Cum quod aut dolore? Minima quam a illum corrupti amet hic, fugit accusantium quidem repudiandae? Voluptatum sint vitae sed quasi doloremque laboriosam.
+        Minus, nisi hic harum illo iure ab velit autem blanditiis ipsa tempora omnis necessitatibus cupiditate commodi optio, magni, aut possimus id eligendi ipsum facere sint atque molestiae consequatur sunt. Sequi?
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+  
+
+ion
+  
 
 </div>
