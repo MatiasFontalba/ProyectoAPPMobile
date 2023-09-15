@@ -12,7 +12,7 @@
 
   <ion-item>
     <ion-label position="floating">Correo Electronico</ion-label>
-    <ion-input [(ngModel)]="formLogin.correoelectronico" placeholder="Ingrese su correo"></ion-input>
+    <ion-input color="black" [(ngModel)]="formLogin.correoelectronico" placeholder="Ingrese su correo"></ion-input>
   </ion-item>
 
   <ion-item>
@@ -24,5 +24,5 @@
 
     <ion-button color="medium" (click)="iniciarSesion()" shape="block" [routerLink]="'/home'">Iniciar Sesion</ion-button>
     <ion-button color="medium"[routerLink]="['/register']" shape="block">Registrarse</ion-button>
-
+    <h5><a style="color:#d8d8d8" [routerLink]="['/register']" >Reestablecer contraseña</a></h5>  
 </ion-content>
