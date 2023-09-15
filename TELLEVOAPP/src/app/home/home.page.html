@@ -15,31 +15,31 @@
   </ion-header>
 
   <ion-content>
-    <ion-button expand="full" fill="clear">
+    <ion-button expand="full" fill="clear" color="dark">
     <ion-icon slot="end" name="person-outline"></ion-icon>
     Mi perfil
   </ion-button>
-  <ion-button expand="full" fill="clear">
+  <ion-button expand="full" fill="clear" color="dark">
     <ion-icon slot="end" name="chatbox-ellipses-outline"></ion-icon>
     Mensajes
   </ion-button>
-  <ion-button expand="full" fill="clear">
+  <ion-button expand="full" fill="clear" color="dark">
     <ion-icon slot="end" name="car-sport-outline"></ion-icon>
     Viajes
   </ion-button>
-  <ion-button expand="full" fill="clear">
+  <ion-button expand="full" fill="clear" color="dark">
     <ion-icon slot="end" name="wallet-outline"></ion-icon>
     Pagos
   </ion-button>
-  <ion-button expand="full" fill="clear">
+  <ion-button expand="full" fill="clear" color="dark">
     <ion-icon slot="end" name="help-buoy-outline"></ion-icon>
     Ayuda
   </ion-button>
-  <ion-button expand="full" fill="clear" backgroundcolor="">
+  <ion-button expand="full" fill="clear" color="dark">
     <ion-icon slot="end" name="settings-outline"></ion-icon>
     Configuraciones
   </ion-button>
-  <ion-button expand="full" fill="clear" [routerLink]="'/login'">
+  <ion-button expand="full" fill="clear" color="danger" [routerLink]="'/login'">
     <ion-icon slot="end" name="log-out-outline"></ion-icon>
     Cerrar Sesion
   </ion-button>
@@ -57,8 +57,13 @@
     </ion-toolbar>
   </ion-header>
   <!--Aqui comienza el cuerpo-->
-  <ion-content class="ion-padding"> Bienvenid@ Francisca
-    <ion-button expand="full">Buscar Conductor</ion-button>
+  <ion-content class="ion-padding">
+    <h3>Bienvenid@ Francisca</h3>
+    <p>¿Que es lo que harás hoy?</p>
+    <ion-button color="medium" expand="full">Buscar Conductor</ion-button>
+    <p style="text-align: center;">o</p>
+    <ion-button color="medium" expand="full"[disabled]="true">Ser conductor</ion-button>
+
     
     <ion-card>
       <img style="width: 100%;" alt="Sobre nosotros" src="https://www.cea-online.es/images/blog/20/errores-conductores-pasajeros-mediana.jpg" />
