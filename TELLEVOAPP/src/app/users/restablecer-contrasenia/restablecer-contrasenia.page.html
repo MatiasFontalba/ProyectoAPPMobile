@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="colorBlack">
+    <ion-title>Restablecer Contraseña</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  color="secundary">
+  <form  #form="ngForm">
+    <ion-grid>
+      <ion-row color="primary" justify-content-center>
+        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <div text-center>
+            <h3>Ingresa tu email y presiona en "Restablecer Contraseña"</h3>
+          </div>
+          <div padding>
+            <ion-item>
+              <ion-input  name="name" type="text" placeholder="Ingresa tu email" ngModel required></ion-input>
+            </ion-item>
+          </div>
+          <div padding>
+            <ion-button color="medium" [routerLink]="['/login']"shape="block">Reestablecer Contraseña</ion-button>
+            <p>Ingresa a tu email y sigue los pasos para crear una nueva contraseña</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>

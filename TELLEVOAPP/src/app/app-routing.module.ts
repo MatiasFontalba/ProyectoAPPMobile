@@ -18,7 +18,11 @@ const routes: Routes = [
   {
     path: 'register',
     loadChildren: () => import('./users/register/register.module').then( m => m.RegisterPageModule)
+  },  {
+    path: 'restablecer-contrasenia',
+    loadChildren: () => import('./users/restablecer-contrasenia/restablecer-contrasenia.module').then( m => m.RestablecerContraseniaPageModule)
   },
+
 
 ];
 
